@@ -1,0 +1,3076 @@
+{
+  "metrics": {
+    "accuracy": 0.9002184996358339,
+    "precision": 0.6352040816326531,
+    "recall": 0.2683189655172414,
+    "f1_score": 0.37727272727272726,
+    "roc_auc": 0.8095268349922164
+  },
+  "confusion_matrix": [
+    [
+      7167,
+      143
+    ],
+    [
+      679,
+      249
+    ]
+  ],
+  "feature_importances": [
+    {
+      "feature": "nr.employed",
+      "importance": 0.5777263363945749
+    },
+    {
+      "feature": "pdays",
+      "importance": 0.11623281721378352
+    },
+    {
+      "feature": "euribor3m",
+      "importance": 0.07038090926274489
+    },
+    {
+      "feature": "cons.conf.idx",
+      "importance": 0.05903251621432362
+    },
+    {
+      "feature": "age",
+      "importance": 0.025050925621441993
+    },
+    {
+      "feature": "month_oct",
+      "importance": 0.02058214026146454
+    },
+    {
+      "feature": "cons.price.idx",
+      "importance": 0.020037344753323534
+    },
+    {
+      "feature": "contact_telephone",
+      "importance": 0.0190548042102925
+    },
+    {
+      "feature": "campaign",
+      "importance": 0.01838796624284039
+    },
+    {
+      "feature": "day_of_week_mon",
+      "importance": 0.015119297331618382
+    },
+    {
+      "feature": "poutcome_failure",
+      "importance": 0.015060111031390343
+    },
+    {
+      "feature": "education_university.degree",
+      "importance": 0.00785835146911642
+    },
+    {
+      "feature": "housing_yes",
+      "importance": 0.004369757300943122
+    },
+    {
+      "feature": "month_jun",
+      "importance": 0.003628602135324652
+    },
+    {
+      "feature": "day_of_week_tue",
+      "importance": 0.003402053747703727
+    },
+    {
+      "feature": "previous",
+      "importance": 0.0032405386792381608
+    },
+    {
+      "feature": "marital_married",
+      "importance": 0.003162232006869965
+    },
+    {
+      "feature": "job_admin.",
+      "importance": 0.002211988516355013
+    },
+    {
+      "feature": "job_retired",
+      "importance": 0.0020308993947348508
+    },
+    {
+      "feature": "month_jul",
+      "importance": 0.0018951605047449298
+    },
+    {
+      "feature": "month_may",
+      "importance": 0.0018264529093018466
+    },
+    {
+      "feature": "loan_yes",
+      "importance": 0.0017498388442366089
+    },
+    {
+      "feature": "job_technician",
+      "importance": 0.0016996950580289954
+    },
+    {
+      "feature": "poutcome_nonexistent",
+      "importance": 0.001533222368452579
+    },
+    {
+      "feature": "day_of_week_fri",
+      "importance": 0.001273612549911454
+    },
+    {
+      "feature": "day_of_week_thu",
+      "importance": 0.0011738305422973935
+    },
+    {
+      "feature": "day_of_week_wed",
+      "importance": 0.001114708787084652
+    },
+    {
+      "feature": "job_self-employed",
+      "importance": 0.0010247525848423103
+    }
+  ],
+  "feature_categories": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed",
+      "unknown"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single",
+      "unknown"
+    ],
+    "education": [
+      "basic.4y",
+      "basic.6y",
+      "basic.9y",
+      "high.school",
+      "illiterate",
+      "professional.course",
+      "university.degree",
+      "unknown"
+    ],
+    "default": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "housing": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "loan": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "contact": [
+      "cellular",
+      "telephone"
+    ],
+    "month": [
+      "apr",
+      "aug",
+      "dec",
+      "jul",
+      "jun",
+      "mar",
+      "may",
+      "nov",
+      "oct",
+      "sep"
+    ],
+    "day_of_week": [
+      "fri",
+      "mon",
+      "thu",
+      "tue",
+      "wed"
+    ],
+    "poutcome": [
+      "failure",
+      "nonexistent",
+      "success"
+    ]
+  },
+  "numerical_features": [
+    "age",
+    "campaign",
+    "pdays",
+    "previous",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed"
+  ],
+  "encoded_features": [
+    "age",
+    "campaign",
+    "pdays",
+    "previous",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed",
+    "job_admin.",
+    "job_blue-collar",
+    "job_entrepreneur",
+    "job_housemaid",
+    "job_management",
+    "job_retired",
+    "job_self-employed",
+    "job_services",
+    "job_student",
+    "job_technician",
+    "job_unemployed",
+    "job_unknown",
+    "marital_divorced",
+    "marital_married",
+    "marital_single",
+    "marital_unknown",
+    "education_basic.4y",
+    "education_basic.6y",
+    "education_basic.9y",
+    "education_high.school",
+    "education_illiterate",
+    "education_professional.course",
+    "education_university.degree",
+    "education_unknown",
+    "default_no",
+    "default_unknown",
+    "default_yes",
+    "housing_no",
+    "housing_unknown",
+    "housing_yes",
+    "loan_no",
+    "loan_unknown",
+    "loan_yes",
+    "contact_cellular",
+    "contact_telephone",
+    "month_apr",
+    "month_aug",
+    "month_dec",
+    "month_jul",
+    "month_jun",
+    "month_mar",
+    "month_may",
+    "month_nov",
+    "month_oct",
+    "month_sep",
+    "day_of_week_fri",
+    "day_of_week_mon",
+    "day_of_week_thu",
+    "day_of_week_tue",
+    "day_of_week_wed",
+    "poutcome_failure",
+    "poutcome_nonexistent",
+    "poutcome_success"
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.00027359781121751026,
+      "tpr": 0.005387931034482759
+    },
+    {
+      "fpr": 0.0025991792065663474,
+      "tpr": 0.07758620689655173
+    },
+    {
+      "fpr": 0.0027359781121751026,
+      "tpr": 0.07974137931034483
+    },
+    {
+      "fpr": 0.0028727770177838577,
+      "tpr": 0.08836206896551724
+    },
+    {
+      "fpr": 0.003146374829001368,
+      "tpr": 0.09375
+    },
+    {
+      "fpr": 0.0036935704514363885,
+      "tpr": 0.09913793103448276
+    },
+    {
+      "fpr": 0.004377564979480164,
+      "tpr": 0.10560344827586207
+    },
+    {
+      "fpr": 0.004651162790697674,
+      "tpr": 0.11206896551724138
+    },
+    {
+      "fpr": 0.00533515731874145,
+      "tpr": 0.11745689655172414
+    },
+    {
+      "fpr": 0.005471956224350205,
+      "tpr": 0.1206896551724138
+    },
+    {
+      "fpr": 0.006155950752393981,
+      "tpr": 0.13254310344827586
+    },
+    {
+      "fpr": 0.007113543091655267,
+      "tpr": 0.1400862068965517
+    },
+    {
+      "fpr": 0.007250341997264022,
+      "tpr": 0.14224137931034483
+    },
+    {
+      "fpr": 0.007934336525307797,
+      "tpr": 0.1497844827586207
+    },
+    {
+      "fpr": 0.008755129958960328,
+      "tpr": 0.15625
+    },
+    {
+      "fpr": 0.009439124487004104,
+      "tpr": 0.16056034482758622
+    },
+    {
+      "fpr": 0.013679890560875513,
+      "tpr": 0.20905172413793102
+    },
+    {
+      "fpr": 0.013816689466484268,
+      "tpr": 0.21875
+    },
+    {
+      "fpr": 0.014090287277701778,
+      "tpr": 0.22198275862068967
+    },
+    {
+      "fpr": 0.014637482900136799,
+      "tpr": 0.2273706896551724
+    },
+    {
+      "fpr": 0.014774281805745554,
+      "tpr": 0.22844827586206898
+    },
+    {
+      "fpr": 0.01545827633378933,
+      "tpr": 0.2338362068965517
+    },
+    {
+      "fpr": 0.016415868673050615,
+      "tpr": 0.23814655172413793
+    },
+    {
+      "fpr": 0.016963064295485636,
+      "tpr": 0.24892241379310345
+    },
+    {
+      "fpr": 0.019425444596443228,
+      "tpr": 0.2640086206896552
+    },
+    {
+      "fpr": 0.019562243502051983,
+      "tpr": 0.2683189655172414
+    },
+    {
+      "fpr": 0.020383036935704514,
+      "tpr": 0.2769396551724138
+    },
+    {
+      "fpr": 0.020383036935704514,
+      "tpr": 0.2855603448275862
+    },
+    {
+      "fpr": 0.02051983584131327,
+      "tpr": 0.28987068965517243
+    },
+    {
+      "fpr": 0.02216142270861833,
+      "tpr": 0.2995689655172414
+    },
+    {
+      "fpr": 0.02216142270861833,
+      "tpr": 0.30280172413793105
+    },
+    {
+      "fpr": 0.02216142270861833,
+      "tpr": 0.3146551724137931
+    },
+    {
+      "fpr": 0.02298221614227086,
+      "tpr": 0.3146551724137931
+    },
+    {
+      "fpr": 0.024760601915184678,
+      "tpr": 0.33405172413793105
+    },
+    {
+      "fpr": 0.0253077975376197,
+      "tpr": 0.33728448275862066
+    },
+    {
+      "fpr": 0.02694938440492476,
+      "tpr": 0.34698275862068967
+    },
+    {
+      "fpr": 0.029001367989056087,
+      "tpr": 0.36530172413793105
+    },
+    {
+      "fpr": 0.029274965800273597,
+      "tpr": 0.36853448275862066
+    },
+    {
+      "fpr": 0.029958960328317373,
+      "tpr": 0.375
+    },
+    {
+      "fpr": 0.03912448700410397,
+      "tpr": 0.4170258620689655
+    },
+    {
+      "fpr": 0.03967168262653899,
+      "tpr": 0.4202586206896552
+    },
+    {
+      "fpr": 0.04008207934336525,
+      "tpr": 0.4224137931034483
+    },
+    {
+      "fpr": 0.04035567715458276,
+      "tpr": 0.4234913793103448
+    },
+    {
+      "fpr": 0.04076607387140903,
+      "tpr": 0.42564655172413796
+    },
+    {
+      "fpr": 0.041723666210670314,
+      "tpr": 0.42887931034482757
+    },
+    {
+      "fpr": 0.04965800273597811,
+      "tpr": 0.46120689655172414
+    },
+    {
+      "fpr": 0.05280437756497948,
+      "tpr": 0.47198275862068967
+    },
+    {
+      "fpr": 0.05444596443228454,
+      "tpr": 0.4730603448275862
+    },
+    {
+      "fpr": 0.054856361149110806,
+      "tpr": 0.47737068965517243
+    },
+    {
+      "fpr": 0.05526675786593707,
+      "tpr": 0.48060344827586204
+    },
+    {
+      "fpr": 0.05636114911080711,
+      "tpr": 0.4816810344827586
+    },
+    {
+      "fpr": 0.05704514363885089,
+      "tpr": 0.4870689655172414
+    },
+    {
+      "fpr": 0.057455540355677154,
+      "tpr": 0.4870689655172414
+    },
+    {
+      "fpr": 0.06703146374829001,
+      "tpr": 0.5269396551724138
+    },
+    {
+      "fpr": 0.06757865937072503,
+      "tpr": 0.53125
+    },
+    {
+      "fpr": 0.07181942544459645,
+      "tpr": 0.5452586206896551
+    },
+    {
+      "fpr": 0.07305061559507524,
+      "tpr": 0.5495689655172413
+    },
+    {
+      "fpr": 0.07346101231190151,
+      "tpr": 0.552801724137931
+    },
+    {
+      "fpr": 0.07578659370725034,
+      "tpr": 0.5560344827586207
+    },
+    {
+      "fpr": 0.07756497948016416,
+      "tpr": 0.5635775862068966
+    },
+    {
+      "fpr": 0.07824897400820793,
+      "tpr": 0.5657327586206896
+    },
+    {
+      "fpr": 0.07920656634746923,
+      "tpr": 0.5668103448275862
+    },
+    {
+      "fpr": 0.079890560875513,
+      "tpr": 0.5743534482758621
+    },
+    {
+      "fpr": 0.08481532147742818,
+      "tpr": 0.5786637931034483
+    },
+    {
+      "fpr": 0.08549931600547196,
+      "tpr": 0.5829741379310345
+    },
+    {
+      "fpr": 0.08632010943912449,
+      "tpr": 0.5862068965517241
+    },
+    {
+      "fpr": 0.08768809849521204,
+      "tpr": 0.5883620689655172
+    },
+    {
+      "fpr": 0.08782489740082079,
+      "tpr": 0.5915948275862069
+    },
+    {
+      "fpr": 0.09015047879616964,
+      "tpr": 0.5959051724137931
+    },
+    {
+      "fpr": 0.0987688098495212,
+      "tpr": 0.6077586206896551
+    },
+    {
+      "fpr": 0.09945280437756499,
+      "tpr": 0.6088362068965517
+    },
+    {
+      "fpr": 0.0997264021887825,
+      "tpr": 0.6099137931034483
+    },
+    {
+      "fpr": 0.10041039671682626,
+      "tpr": 0.6131465517241379
+    },
+    {
+      "fpr": 0.10068399452804377,
+      "tpr": 0.6174568965517241
+    },
+    {
+      "fpr": 0.13638850889192886,
+      "tpr": 0.6519396551724138
+    },
+    {
+      "fpr": 0.1491108071135431,
+      "tpr": 0.6594827586206896
+    },
+    {
+      "fpr": 0.1518467852257182,
+      "tpr": 0.6605603448275862
+    },
+    {
+      "fpr": 0.15294117647058825,
+      "tpr": 0.6616379310344828
+    },
+    {
+      "fpr": 0.1642954856361149,
+      "tpr": 0.6788793103448276
+    },
+    {
+      "fpr": 0.1667578659370725,
+      "tpr": 0.6842672413793104
+    },
+    {
+      "fpr": 0.3652530779753762,
+      "tpr": 0.7995689655172413
+    },
+    {
+      "fpr": 0.3709986320109439,
+      "tpr": 0.8006465517241379
+    },
+    {
+      "fpr": 0.43488372093023253,
+      "tpr": 0.834051724137931
+    },
+    {
+      "fpr": 0.45690834473324216,
+      "tpr": 0.8426724137931034
+    },
+    {
+      "fpr": 0.45718194254445965,
+      "tpr": 0.8426724137931034
+    },
+    {
+      "fpr": 0.4575923392612859,
+      "tpr": 0.8459051724137931
+    },
+    {
+      "fpr": 0.6094391244870041,
+      "tpr": 0.8857758620689655
+    },
+    {
+      "fpr": 0.724623803009576,
+      "tpr": 0.9181034482758621
+    },
+    {
+      "fpr": 0.7857729138166895,
+      "tpr": 0.9418103448275862
+    },
+    {
+      "fpr": 0.807250341997264,
+      "tpr": 0.9515086206896551
+    },
+    {
+      "fpr": 0.8117647058823529,
+      "tpr": 0.9515086206896551
+    },
+    {
+      "fpr": 0.8347469220246237,
+      "tpr": 0.9612068965517241
+    },
+    {
+      "fpr": 0.9735978112175102,
+      "tpr": 0.9924568965517241
+    },
+    {
+      "fpr": 0.9833105335157318,
+      "tpr": 0.9946120689655172
+    },
+    {
+      "fpr": 0.9976744186046511,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "decision_tree": {
+    "node_id": 0,
+    "samples": 32950,
+    "value": [
+      0.8873444613050075,
+      0.11265553869499241
+    ],
+    "is_leaf": false,
+    "feature_idx": 8,
+    "feature_name": "nr.employed",
+    "threshold": 5087.650146484375,
+    "left": {
+      "node_id": 1,
+      "samples": 3991,
+      "value": [
+        0.5592583312453019,
+        0.44074166875469806
+      ],
+      "is_leaf": false,
+      "feature_idx": 2,
+      "feature_name": "pdays",
+      "threshold": 16.5,
+      "left": {
+        "node_id": 2,
+        "samples": 990,
+        "value": [
+          0.301010101010101,
+          0.6989898989898989
+        ],
+        "is_leaf": false,
+        "feature_idx": 55,
+        "feature_name": "day_of_week_mon",
+        "threshold": 0.5,
+        "left": {
+          "node_id": 3,
+          "samples": 788,
+          "value": [
+            0.26015228426395937,
+            0.7398477157360406
+          ],
+          "is_leaf": false,
+          "feature_idx": 5,
+          "feature_name": "cons.price.idx",
+          "threshold": 92.55900192260742,
+          "left": {
+            "node_id": 4,
+            "samples": 199,
+            "value": [
+              0.39195979899497485,
+              0.6080402010050251
+            ],
+            "is_leaf": false,
+            "feature_idx": 7,
+            "feature_name": "euribor3m",
+            "threshold": 0.8564999997615814,
+            "left": {
+              "node_id": 5,
+              "samples": 124,
+              "value": [
+                0.3225806451612903,
+                0.6774193548387096
+              ],
+              "is_leaf": false,
+              "feature_idx": 0,
+              "feature_name": "age",
+              "threshold": 34.5,
+              "left": {
+                "node_id": 6,
+                "samples": 40,
+                "value": [
+                  0.2,
+                  0.8
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              },
+              "right": {
+                "node_id": 7,
+                "samples": 84,
+                "value": [
+                  0.38095238095238093,
+                  0.6190476190476191
+                ],
+                "is_leaf": false,
+                "feature_idx": 38,
+                "feature_name": "housing_yes",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 8,
+                  "samples": 34,
+                  "value": [
+                    0.2647058823529412,
+                    0.7352941176470589
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 9,
+                  "samples": 50,
+                  "value": [
+                    0.46,
+                    0.54
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 1.5,
+                  "left": {
+                    "node_id": 10,
+                    "samples": 25,
+                    "value": [
+                      0.56,
+                      0.44
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 11,
+                    "samples": 25,
+                    "value": [
+                      0.36,
+                      0.64
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  }
+                }
+              }
+            },
+            "right": {
+              "node_id": 12,
+              "samples": 75,
+              "value": [
+                0.5066666666666667,
+                0.49333333333333335
+              ],
+              "is_leaf": false,
+              "feature_idx": 7,
+              "feature_name": "euribor3m",
+              "threshold": 0.8799999952316284,
+              "left": {
+                "node_id": 13,
+                "samples": 39,
+                "value": [
+                  0.6410256410256411,
+                  0.358974358974359
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              },
+              "right": {
+                "node_id": 14,
+                "samples": 36,
+                "value": [
+                  0.3611111111111111,
+                  0.6388888888888888
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            }
+          },
+          "right": {
+            "node_id": 15,
+            "samples": 589,
+            "value": [
+              0.21561969439728354,
+              0.7843803056027164
+            ],
+            "is_leaf": false,
+            "feature_idx": 48,
+            "feature_name": "month_jun",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 16,
+              "samples": 499,
+              "value": [
+                0.18637274549098196,
+                0.8136272545090181
+              ],
+              "is_leaf": false,
+              "feature_idx": 1,
+              "feature_name": "campaign",
+              "threshold": 3.5,
+              "left": {
+                "node_id": 17,
+                "samples": 460,
+                "value": [
+                  0.1673913043478261,
+                  0.8326086956521739
+                ],
+                "is_leaf": false,
+                "feature_idx": 6,
+                "feature_name": "cons.conf.idx",
+                "threshold": -50.14999961853027,
+                "left": {
+                  "node_id": 18,
+                  "samples": 25,
+                  "value": [
+                    0.4,
+                    0.6
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 19,
+                  "samples": 435,
+                  "value": [
+                    0.15402298850574714,
+                    0.8459770114942529
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 59,
+                  "feature_name": "poutcome_failure",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 20,
+                    "samples": 395,
+                    "value": [
+                      0.14177215189873418,
+                      0.8582278481012658
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  },
+                  "right": {
+                    "node_id": 21,
+                    "samples": 40,
+                    "value": [
+                      0.275,
+                      0.725
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 22,
+                "samples": 39,
+                "value": [
+                  0.41025641025641024,
+                  0.5897435897435898
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            },
+            "right": {
+              "node_id": 23,
+              "samples": 90,
+              "value": [
+                0.37777777777777777,
+                0.6222222222222222
+              ],
+              "is_leaf": false,
+              "feature_idx": 0,
+              "feature_name": "age",
+              "threshold": 40.5,
+              "left": {
+                "node_id": 24,
+                "samples": 68,
+                "value": [
+                  0.4264705882352941,
+                  0.5735294117647058
+                ],
+                "is_leaf": false,
+                "feature_idx": 3,
+                "feature_name": "previous",
+                "threshold": 1.5,
+                "left": {
+                  "node_id": 25,
+                  "samples": 34,
+                  "value": [
+                    0.3235294117647059,
+                    0.6764705882352942
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 26,
+                  "samples": 34,
+                  "value": [
+                    0.5294117647058824,
+                    0.47058823529411764
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              },
+              "right": {
+                "node_id": 27,
+                "samples": 22,
+                "value": [
+                  0.22727272727272727,
+                  0.7727272727272727
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            }
+          }
+        },
+        "right": {
+          "node_id": 28,
+          "samples": 202,
+          "value": [
+            0.4603960396039604,
+            0.5396039603960396
+          ],
+          "is_leaf": false,
+          "feature_idx": 6,
+          "feature_name": "cons.conf.idx",
+          "threshold": -34.69999885559082,
+          "left": {
+            "node_id": 29,
+            "samples": 115,
+            "value": [
+              0.3826086956521739,
+              0.6173913043478261
+            ],
+            "is_leaf": false,
+            "feature_idx": 38,
+            "feature_name": "housing_yes",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 30,
+              "samples": 53,
+              "value": [
+                0.49056603773584906,
+                0.5094339622641509
+              ],
+              "is_leaf": false,
+              "feature_idx": 1,
+              "feature_name": "campaign",
+              "threshold": 1.5,
+              "left": {
+                "node_id": 31,
+                "samples": 26,
+                "value": [
+                  0.2692307692307692,
+                  0.7307692307692307
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              },
+              "right": {
+                "node_id": 32,
+                "samples": 27,
+                "value": [
+                  0.7037037037037037,
+                  0.2962962962962963
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              }
+            },
+            "right": {
+              "node_id": 33,
+              "samples": 62,
+              "value": [
+                0.2903225806451613,
+                0.7096774193548387
+              ],
+              "is_leaf": false,
+              "feature_idx": 22,
+              "feature_name": "marital_married",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 34,
+                "samples": 39,
+                "value": [
+                  0.41025641025641024,
+                  0.5897435897435898
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              },
+              "right": {
+                "node_id": 35,
+                "samples": 23,
+                "value": [
+                  0.08695652173913043,
+                  0.9130434782608695
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            }
+          },
+          "right": {
+            "node_id": 36,
+            "samples": 87,
+            "value": [
+              0.5632183908045977,
+              0.4367816091954023
+            ],
+            "is_leaf": false,
+            "feature_idx": 31,
+            "feature_name": "education_university.degree",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 37,
+              "samples": 55,
+              "value": [
+                0.6545454545454545,
+                0.34545454545454546
+              ],
+              "is_leaf": false,
+              "feature_idx": 22,
+              "feature_name": "marital_married",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 38,
+                "samples": 23,
+                "value": [
+                  0.8260869565217391,
+                  0.17391304347826086
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              },
+              "right": {
+                "node_id": 39,
+                "samples": 32,
+                "value": [
+                  0.53125,
+                  0.46875
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              }
+            },
+            "right": {
+              "node_id": 40,
+              "samples": 32,
+              "value": [
+                0.40625,
+                0.59375
+              ],
+              "is_leaf": true,
+              "class_idx": 1,
+              "class_name": "yes"
+            }
+          }
+        }
+      },
+      "right": {
+        "node_id": 41,
+        "samples": 3001,
+        "value": [
+          0.6444518493835388,
+          0.35554815061646117
+        ],
+        "is_leaf": false,
+        "feature_idx": 43,
+        "feature_name": "contact_telephone",
+        "threshold": 0.5,
+        "left": {
+          "node_id": 42,
+          "samples": 2509,
+          "value": [
+            0.6185731367078517,
+            0.38142686329214825
+          ],
+          "is_leaf": false,
+          "feature_idx": 5,
+          "feature_name": "cons.price.idx",
+          "threshold": 93.16600036621094,
+          "left": {
+            "node_id": 43,
+            "samples": 1663,
+            "value": [
+              0.6578472639807577,
+              0.34215273601924234
+            ],
+            "is_leaf": false,
+            "feature_idx": 7,
+            "feature_name": "euribor3m",
+            "threshold": 0.7380000054836273,
+            "left": {
+              "node_id": 44,
+              "samples": 353,
+              "value": [
+                0.5779036827195467,
+                0.42209631728045327
+              ],
+              "is_leaf": false,
+              "feature_idx": 31,
+              "feature_name": "education_university.degree",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 45,
+                "samples": 228,
+                "value": [
+                  0.5263157894736842,
+                  0.47368421052631576
+                ],
+                "is_leaf": false,
+                "feature_idx": 41,
+                "feature_name": "loan_yes",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 46,
+                  "samples": 198,
+                  "value": [
+                    0.494949494949495,
+                    0.5050505050505051
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 1.5,
+                  "left": {
+                    "node_id": 47,
+                    "samples": 113,
+                    "value": [
+                      0.4247787610619469,
+                      0.5752212389380531
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  },
+                  "right": {
+                    "node_id": 48,
+                    "samples": 85,
+                    "value": [
+                      0.5882352941176471,
+                      0.4117647058823529
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 49,
+                  "samples": 30,
+                  "value": [
+                    0.7333333333333333,
+                    0.26666666666666666
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              },
+              "right": {
+                "node_id": 50,
+                "samples": 125,
+                "value": [
+                  0.672,
+                  0.328
+                ],
+                "is_leaf": false,
+                "feature_idx": 55,
+                "feature_name": "day_of_week_mon",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 51,
+                  "samples": 90,
+                  "value": [
+                    0.6111111111111112,
+                    0.3888888888888889
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 0,
+                  "feature_name": "age",
+                  "threshold": 32.5,
+                  "left": {
+                    "node_id": 52,
+                    "samples": 32,
+                    "value": [
+                      0.75,
+                      0.25
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 53,
+                    "samples": 58,
+                    "value": [
+                      0.5344827586206896,
+                      0.46551724137931033
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 54,
+                  "samples": 35,
+                  "value": [
+                    0.8285714285714286,
+                    0.17142857142857143
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              }
+            },
+            "right": {
+              "node_id": 55,
+              "samples": 1310,
+              "value": [
+                0.6793893129770993,
+                0.32061068702290074
+              ],
+              "is_leaf": false,
+              "feature_idx": 0,
+              "feature_name": "age",
+              "threshold": 33.5,
+              "left": {
+                "node_id": 56,
+                "samples": 498,
+                "value": [
+                  0.6385542168674698,
+                  0.3614457831325301
+                ],
+                "is_leaf": false,
+                "feature_idx": 3,
+                "feature_name": "previous",
+                "threshold": 1.5,
+                "left": {
+                  "node_id": 57,
+                  "samples": 478,
+                  "value": [
+                    0.6255230125523012,
+                    0.37447698744769875
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 15,
+                  "feature_name": "job_self-employed",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 58,
+                    "samples": 449,
+                    "value": [
+                      0.6146993318485523,
+                      0.38530066815144765
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 59,
+                    "samples": 29,
+                    "value": [
+                      0.7931034482758621,
+                      0.20689655172413793
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 60,
+                  "samples": 20,
+                  "value": [
+                    0.95,
+                    0.05
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              },
+              "right": {
+                "node_id": 61,
+                "samples": 812,
+                "value": [
+                  0.7044334975369458,
+                  0.2955665024630542
+                ],
+                "is_leaf": false,
+                "feature_idx": 7,
+                "feature_name": "euribor3m",
+                "threshold": 0.7414999902248383,
+                "left": {
+                  "node_id": 62,
+                  "samples": 64,
+                  "value": [
+                    0.8125,
+                    0.1875
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 54,
+                  "feature_name": "day_of_week_fri",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 63,
+                    "samples": 43,
+                    "value": [
+                      0.8604651162790697,
+                      0.13953488372093023
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 64,
+                    "samples": 21,
+                    "value": [
+                      0.7142857142857143,
+                      0.2857142857142857
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 65,
+                  "samples": 748,
+                  "value": [
+                    0.6951871657754011,
+                    0.3048128342245989
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 1.5,
+                  "left": {
+                    "node_id": 66,
+                    "samples": 459,
+                    "value": [
+                      0.7233115468409586,
+                      0.2766884531590414
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 67,
+                    "samples": 289,
+                    "value": [
+                      0.6505190311418685,
+                      0.3494809688581315
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              }
+            }
+          },
+          "right": {
+            "node_id": 68,
+            "samples": 846,
+            "value": [
+              0.541371158392435,
+              0.458628841607565
+            ],
+            "is_leaf": false,
+            "feature_idx": 59,
+            "feature_name": "poutcome_failure",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 69,
+              "samples": 490,
+              "value": [
+                0.45102040816326533,
+                0.5489795918367347
+              ],
+              "is_leaf": false,
+              "feature_idx": 55,
+              "feature_name": "day_of_week_mon",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 70,
+                "samples": 370,
+                "value": [
+                  0.4081081081081081,
+                  0.5918918918918918
+                ],
+                "is_leaf": false,
+                "feature_idx": 54,
+                "feature_name": "day_of_week_fri",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 71,
+                  "samples": 280,
+                  "value": [
+                    0.3821428571428571,
+                    0.6178571428571429
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 50,
+                  "feature_name": "month_may",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 72,
+                    "samples": 258,
+                    "value": [
+                      0.3992248062015504,
+                      0.6007751937984496
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  },
+                  "right": {
+                    "node_id": 73,
+                    "samples": 22,
+                    "value": [
+                      0.18181818181818182,
+                      0.8181818181818182
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  }
+                },
+                "right": {
+                  "node_id": 74,
+                  "samples": 90,
+                  "value": [
+                    0.4888888888888889,
+                    0.5111111111111111
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 0,
+                  "feature_name": "age",
+                  "threshold": 50.5,
+                  "left": {
+                    "node_id": 75,
+                    "samples": 66,
+                    "value": [
+                      0.42424242424242425,
+                      0.5757575757575758
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  },
+                  "right": {
+                    "node_id": 76,
+                    "samples": 24,
+                    "value": [
+                      0.6666666666666666,
+                      0.3333333333333333
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 77,
+                "samples": 120,
+                "value": [
+                  0.5833333333333334,
+                  0.4166666666666667
+                ],
+                "is_leaf": false,
+                "feature_idx": 1,
+                "feature_name": "campaign",
+                "threshold": 1.5,
+                "left": {
+                  "node_id": 78,
+                  "samples": 35,
+                  "value": [
+                    0.4,
+                    0.6
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 79,
+                  "samples": 85,
+                  "value": [
+                    0.6588235294117647,
+                    0.3411764705882353
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 7,
+                  "feature_name": "euribor3m",
+                  "threshold": 0.8970000147819519,
+                  "left": {
+                    "node_id": 80,
+                    "samples": 64,
+                    "value": [
+                      0.59375,
+                      0.40625
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 81,
+                    "samples": 21,
+                    "value": [
+                      0.8571428571428571,
+                      0.14285714285714285
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              }
+            },
+            "right": {
+              "node_id": 82,
+              "samples": 356,
+              "value": [
+                0.6657303370786517,
+                0.3342696629213483
+              ],
+              "is_leaf": false,
+              "feature_idx": 47,
+              "feature_name": "month_jul",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 83,
+                "samples": 296,
+                "value": [
+                  0.6959459459459459,
+                  0.30405405405405406
+                ],
+                "is_leaf": false,
+                "feature_idx": 57,
+                "feature_name": "day_of_week_tue",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 84,
+                  "samples": 233,
+                  "value": [
+                    0.7296137339055794,
+                    0.2703862660944206
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 7,
+                  "feature_name": "euribor3m",
+                  "threshold": 0.882500022649765,
+                  "left": {
+                    "node_id": 85,
+                    "samples": 145,
+                    "value": [
+                      0.6620689655172414,
+                      0.33793103448275863
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 86,
+                    "samples": 88,
+                    "value": [
+                      0.8409090909090909,
+                      0.1590909090909091
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 87,
+                  "samples": 63,
+                  "value": [
+                    0.5714285714285714,
+                    0.42857142857142855
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 0,
+                  "feature_name": "age",
+                  "threshold": 38.0,
+                  "left": {
+                    "node_id": 88,
+                    "samples": 36,
+                    "value": [
+                      0.6944444444444444,
+                      0.3055555555555556
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 89,
+                    "samples": 27,
+                    "value": [
+                      0.4074074074074074,
+                      0.5925925925925926
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 1,
+                    "class_name": "yes"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 90,
+                "samples": 60,
+                "value": [
+                  0.5166666666666667,
+                  0.48333333333333334
+                ],
+                "is_leaf": false,
+                "feature_idx": 38,
+                "feature_name": "housing_yes",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 91,
+                  "samples": 27,
+                  "value": [
+                    0.37037037037037035,
+                    0.6296296296296297
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 92,
+                  "samples": 33,
+                  "value": [
+                    0.6363636363636364,
+                    0.36363636363636365
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "node_id": 93,
+          "samples": 492,
+          "value": [
+            0.7764227642276422,
+            0.22357723577235772
+          ],
+          "is_leaf": false,
+          "feature_idx": 7,
+          "feature_name": "euribor3m",
+          "threshold": 0.6534999907016754,
+          "left": {
+            "node_id": 94,
+            "samples": 27,
+            "value": [
+              0.37037037037037035,
+              0.6296296296296297
+            ],
+            "is_leaf": true,
+            "class_idx": 1,
+            "class_name": "yes"
+          },
+          "right": {
+            "node_id": 95,
+            "samples": 465,
+            "value": [
+              0.8,
+              0.2
+            ],
+            "is_leaf": false,
+            "feature_idx": 5,
+            "feature_name": "cons.price.idx",
+            "threshold": 93.62250137329102,
+            "left": {
+              "node_id": 96,
+              "samples": 243,
+              "value": [
+                0.7283950617283951,
+                0.2716049382716049
+              ],
+              "is_leaf": false,
+              "feature_idx": 1,
+              "feature_name": "campaign",
+              "threshold": 1.5,
+              "left": {
+                "node_id": 97,
+                "samples": 104,
+                "value": [
+                  0.625,
+                  0.375
+                ],
+                "is_leaf": false,
+                "feature_idx": 7,
+                "feature_name": "euribor3m",
+                "threshold": 0.715499997138977,
+                "left": {
+                  "node_id": 98,
+                  "samples": 21,
+                  "value": [
+                    0.42857142857142855,
+                    0.5714285714285714
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 99,
+                  "samples": 83,
+                  "value": [
+                    0.6746987951807228,
+                    0.3253012048192771
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 9,
+                  "feature_name": "job_admin.",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 100,
+                    "samples": 51,
+                    "value": [
+                      0.7450980392156863,
+                      0.2549019607843137
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 101,
+                    "samples": 32,
+                    "value": [
+                      0.5625,
+                      0.4375
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 102,
+                "samples": 139,
+                "value": [
+                  0.8057553956834532,
+                  0.19424460431654678
+                ],
+                "is_leaf": false,
+                "feature_idx": 55,
+                "feature_name": "day_of_week_mon",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 103,
+                  "samples": 102,
+                  "value": [
+                    0.7549019607843137,
+                    0.24509803921568626
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 2.5,
+                  "left": {
+                    "node_id": 104,
+                    "samples": 43,
+                    "value": [
+                      0.8372093023255814,
+                      0.16279069767441862
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 105,
+                    "samples": 59,
+                    "value": [
+                      0.6949152542372882,
+                      0.3050847457627119
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 106,
+                  "samples": 37,
+                  "value": [
+                    0.9459459459459459,
+                    0.05405405405405406
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              }
+            },
+            "right": {
+              "node_id": 107,
+              "samples": 222,
+              "value": [
+                0.8783783783783784,
+                0.12162162162162163
+              ],
+              "is_leaf": false,
+              "feature_idx": 1,
+              "feature_name": "campaign",
+              "threshold": 1.5,
+              "left": {
+                "node_id": 108,
+                "samples": 178,
+                "value": [
+                  0.9157303370786517,
+                  0.08426966292134831
+                ],
+                "is_leaf": false,
+                "feature_idx": 7,
+                "feature_name": "euribor3m",
+                "threshold": 0.8955000042915344,
+                "left": {
+                  "node_id": 109,
+                  "samples": 139,
+                  "value": [
+                    0.935251798561151,
+                    0.06474820143884892
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 7,
+                  "feature_name": "euribor3m",
+                  "threshold": 0.87950000166893,
+                  "left": {
+                    "node_id": 110,
+                    "samples": 97,
+                    "value": [
+                      0.9072164948453608,
+                      0.09278350515463918
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 111,
+                    "samples": 42,
+                    "value": [
+                      1.0,
+                      0.0
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 112,
+                  "samples": 39,
+                  "value": [
+                    0.8461538461538461,
+                    0.15384615384615385
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              },
+              "right": {
+                "node_id": 113,
+                "samples": 44,
+                "value": [
+                  0.7272727272727273,
+                  0.2727272727272727
+                ],
+                "is_leaf": false,
+                "feature_idx": 7,
+                "feature_name": "euribor3m",
+                "threshold": 0.8770000040531158,
+                "left": {
+                  "node_id": 114,
+                  "samples": 22,
+                  "value": [
+                    0.5909090909090909,
+                    0.4090909090909091
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                },
+                "right": {
+                  "node_id": 115,
+                  "samples": 22,
+                  "value": [
+                    0.8636363636363636,
+                    0.13636363636363635
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "node_id": 116,
+      "samples": 28959,
+      "value": [
+        0.9325598259608412,
+        0.0674401740391588
+      ],
+      "is_leaf": false,
+      "feature_idx": 6,
+      "feature_name": "cons.conf.idx",
+      "threshold": -46.64999961853027,
+      "left": {
+        "node_id": 117,
+        "samples": 2172,
+        "value": [
+          0.7923572744014733,
+          0.2076427255985267
+        ],
+        "is_leaf": false,
+        "feature_idx": 7,
+        "feature_name": "euribor3m",
+        "threshold": 1.5254999995231628,
+        "left": {
+          "node_id": 118,
+          "samples": 1968,
+          "value": [
+            0.8185975609756098,
+            0.18140243902439024
+          ],
+          "is_leaf": false,
+          "feature_idx": 7,
+          "feature_name": "euribor3m",
+          "threshold": 1.3779999613761902,
+          "left": {
+            "node_id": 119,
+            "samples": 250,
+            "value": [
+              0.572,
+              0.428
+            ],
+            "is_leaf": false,
+            "feature_idx": 2,
+            "feature_name": "pdays",
+            "threshold": 6.5,
+            "left": {
+              "node_id": 120,
+              "samples": 35,
+              "value": [
+                0.2857142857142857,
+                0.7142857142857143
+              ],
+              "is_leaf": true,
+              "class_idx": 1,
+              "class_name": "yes"
+            },
+            "right": {
+              "node_id": 121,
+              "samples": 215,
+              "value": [
+                0.6186046511627907,
+                0.3813953488372093
+              ],
+              "is_leaf": false,
+              "feature_idx": 18,
+              "feature_name": "job_technician",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 122,
+                "samples": 184,
+                "value": [
+                  0.6521739130434783,
+                  0.34782608695652173
+                ],
+                "is_leaf": false,
+                "feature_idx": 60,
+                "feature_name": "poutcome_nonexistent",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 123,
+                  "samples": 31,
+                  "value": [
+                    0.8387096774193549,
+                    0.16129032258064516
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                },
+                "right": {
+                  "node_id": 124,
+                  "samples": 153,
+                  "value": [
+                    0.6143790849673203,
+                    0.38562091503267976
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 0,
+                  "feature_name": "age",
+                  "threshold": 48.5,
+                  "left": {
+                    "node_id": 125,
+                    "samples": 115,
+                    "value": [
+                      0.5739130434782609,
+                      0.4260869565217391
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 126,
+                    "samples": 38,
+                    "value": [
+                      0.7368421052631579,
+                      0.2631578947368421
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 127,
+                "samples": 31,
+                "value": [
+                  0.41935483870967744,
+                  0.5806451612903226
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            }
+          },
+          "right": {
+            "node_id": 128,
+            "samples": 1718,
+            "value": [
+              0.8544819557625145,
+              0.14551804423748546
+            ],
+            "is_leaf": false,
+            "feature_idx": 0,
+            "feature_name": "age",
+            "threshold": 57.5,
+            "left": {
+              "node_id": 129,
+              "samples": 1620,
+              "value": [
+                0.8697530864197531,
+                0.13024691358024693
+              ],
+              "is_leaf": false,
+              "feature_idx": 0,
+              "feature_name": "age",
+              "threshold": 30.5,
+              "left": {
+                "node_id": 130,
+                "samples": 272,
+                "value": [
+                  0.7242647058823529,
+                  0.2757352941176471
+                ],
+                "is_leaf": false,
+                "feature_idx": 59,
+                "feature_name": "poutcome_failure",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 131,
+                  "samples": 226,
+                  "value": [
+                    0.6858407079646017,
+                    0.3141592920353982
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 9,
+                  "feature_name": "job_admin.",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 132,
+                    "samples": 155,
+                    "value": [
+                      0.7354838709677419,
+                      0.2645161290322581
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 133,
+                    "samples": 71,
+                    "value": [
+                      0.5774647887323944,
+                      0.4225352112676056
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 134,
+                  "samples": 46,
+                  "value": [
+                    0.9130434782608695,
+                    0.08695652173913043
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 1.5,
+                  "left": {
+                    "node_id": 135,
+                    "samples": 23,
+                    "value": [
+                      0.8260869565217391,
+                      0.17391304347826086
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 136,
+                    "samples": 23,
+                    "value": [
+                      1.0,
+                      0.0
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 137,
+                "samples": 1348,
+                "value": [
+                  0.8991097922848664,
+                  0.10089020771513353
+                ],
+                "is_leaf": false,
+                "feature_idx": 31,
+                "feature_name": "education_university.degree",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 138,
+                  "samples": 1006,
+                  "value": [
+                    0.9254473161033797,
+                    0.07455268389662027
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 0,
+                  "feature_name": "age",
+                  "threshold": 42.5,
+                  "left": {
+                    "node_id": 139,
+                    "samples": 613,
+                    "value": [
+                      0.9429037520391517,
+                      0.057096247960848286
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 140,
+                    "samples": 393,
+                    "value": [
+                      0.8982188295165394,
+                      0.10178117048346055
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 141,
+                  "samples": 342,
+                  "value": [
+                    0.8216374269005848,
+                    0.1783625730994152
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 57,
+                  "feature_name": "day_of_week_tue",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 142,
+                    "samples": 302,
+                    "value": [
+                      0.8443708609271523,
+                      0.15562913907284767
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 143,
+                    "samples": 40,
+                    "value": [
+                      0.65,
+                      0.35
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              }
+            },
+            "right": {
+              "node_id": 144,
+              "samples": 98,
+              "value": [
+                0.6020408163265306,
+                0.3979591836734694
+              ],
+              "is_leaf": false,
+              "feature_idx": 14,
+              "feature_name": "job_retired",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 145,
+                "samples": 33,
+                "value": [
+                  0.7878787878787878,
+                  0.21212121212121213
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              },
+              "right": {
+                "node_id": 146,
+                "samples": 65,
+                "value": [
+                  0.5076923076923077,
+                  0.49230769230769234
+                ],
+                "is_leaf": false,
+                "feature_idx": 58,
+                "feature_name": "day_of_week_wed",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 147,
+                  "samples": 44,
+                  "value": [
+                    0.5909090909090909,
+                    0.4090909090909091
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 57,
+                  "feature_name": "day_of_week_tue",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 148,
+                    "samples": 24,
+                    "value": [
+                      0.6666666666666666,
+                      0.3333333333333333
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 149,
+                    "samples": 20,
+                    "value": [
+                      0.5,
+                      0.5
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 150,
+                  "samples": 21,
+                  "value": [
+                    0.3333333333333333,
+                    0.6666666666666666
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "node_id": 151,
+          "samples": 204,
+          "value": [
+            0.5392156862745098,
+            0.46078431372549017
+          ],
+          "is_leaf": false,
+          "feature_idx": 55,
+          "feature_name": "day_of_week_mon",
+          "threshold": 0.5,
+          "left": {
+            "node_id": 152,
+            "samples": 156,
+            "value": [
+              0.4935897435897436,
+              0.5064102564102564
+            ],
+            "is_leaf": false,
+            "feature_idx": 38,
+            "feature_name": "housing_yes",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 153,
+              "samples": 57,
+              "value": [
+                0.40350877192982454,
+                0.5964912280701754
+              ],
+              "is_leaf": false,
+              "feature_idx": 1,
+              "feature_name": "campaign",
+              "threshold": 1.5,
+              "left": {
+                "node_id": 154,
+                "samples": 24,
+                "value": [
+                  0.5,
+                  0.5
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              },
+              "right": {
+                "node_id": 155,
+                "samples": 33,
+                "value": [
+                  0.3333333333333333,
+                  0.6666666666666666
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            },
+            "right": {
+              "node_id": 156,
+              "samples": 99,
+              "value": [
+                0.5454545454545454,
+                0.45454545454545453
+              ],
+              "is_leaf": false,
+              "feature_idx": 7,
+              "feature_name": "euribor3m",
+              "threshold": 1.5699999928474426,
+              "left": {
+                "node_id": 157,
+                "samples": 35,
+                "value": [
+                  0.6857142857142857,
+                  0.3142857142857143
+                ],
+                "is_leaf": true,
+                "class_idx": 0,
+                "class_name": "no"
+              },
+              "right": {
+                "node_id": 158,
+                "samples": 64,
+                "value": [
+                  0.46875,
+                  0.53125
+                ],
+                "is_leaf": false,
+                "feature_idx": 31,
+                "feature_name": "education_university.degree",
+                "threshold": 0.5,
+                "left": {
+                  "node_id": 159,
+                  "samples": 40,
+                  "value": [
+                    0.375,
+                    0.625
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 1,
+                  "class_name": "yes"
+                },
+                "right": {
+                  "node_id": 160,
+                  "samples": 24,
+                  "value": [
+                    0.625,
+                    0.375
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                }
+              }
+            }
+          },
+          "right": {
+            "node_id": 161,
+            "samples": 48,
+            "value": [
+              0.6875,
+              0.3125
+            ],
+            "is_leaf": false,
+            "feature_idx": 23,
+            "feature_name": "marital_single",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 162,
+              "samples": 25,
+              "value": [
+                0.64,
+                0.36
+              ],
+              "is_leaf": true,
+              "class_idx": 0,
+              "class_name": "no"
+            },
+            "right": {
+              "node_id": 163,
+              "samples": 23,
+              "value": [
+                0.7391304347826086,
+                0.2608695652173913
+              ],
+              "is_leaf": true,
+              "class_idx": 0,
+              "class_name": "no"
+            }
+          }
+        }
+      },
+      "right": {
+        "node_id": 164,
+        "samples": 26787,
+        "value": [
+          0.9439280247881435,
+          0.0560719752118565
+        ],
+        "is_leaf": false,
+        "feature_idx": 52,
+        "feature_name": "month_oct",
+        "threshold": 0.5,
+        "left": {
+          "node_id": 165,
+          "samples": 26732,
+          "value": [
+            0.9450845428699686,
+            0.054915457130031424
+          ],
+          "is_leaf": false,
+          "feature_idx": 2,
+          "feature_name": "pdays",
+          "threshold": 11.5,
+          "left": {
+            "node_id": 166,
+            "samples": 132,
+            "value": [
+              0.7121212121212122,
+              0.2878787878787879
+            ],
+            "is_leaf": false,
+            "feature_idx": 5,
+            "feature_name": "cons.price.idx",
+            "threshold": 93.0464973449707,
+            "left": {
+              "node_id": 167,
+              "samples": 106,
+              "value": [
+                0.660377358490566,
+                0.33962264150943394
+              ],
+              "is_leaf": false,
+              "feature_idx": 7,
+              "feature_name": "euribor3m",
+              "threshold": 1.3489999771118164,
+              "left": {
+                "node_id": 168,
+                "samples": 84,
+                "value": [
+                  0.7261904761904762,
+                  0.27380952380952384
+                ],
+                "is_leaf": false,
+                "feature_idx": 7,
+                "feature_name": "euribor3m",
+                "threshold": 1.2680000066757202,
+                "left": {
+                  "node_id": 169,
+                  "samples": 34,
+                  "value": [
+                    0.8235294117647058,
+                    0.17647058823529413
+                  ],
+                  "is_leaf": true,
+                  "class_idx": 0,
+                  "class_name": "no"
+                },
+                "right": {
+                  "node_id": 170,
+                  "samples": 50,
+                  "value": [
+                    0.66,
+                    0.34
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 1.5,
+                  "left": {
+                    "node_id": 171,
+                    "samples": 26,
+                    "value": [
+                      0.5769230769230769,
+                      0.4230769230769231
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 172,
+                    "samples": 24,
+                    "value": [
+                      0.75,
+                      0.25
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 173,
+                "samples": 22,
+                "value": [
+                  0.4090909090909091,
+                  0.5909090909090909
+                ],
+                "is_leaf": true,
+                "class_idx": 1,
+                "class_name": "yes"
+              }
+            },
+            "right": {
+              "node_id": 174,
+              "samples": 26,
+              "value": [
+                0.9230769230769231,
+                0.07692307692307693
+              ],
+              "is_leaf": true,
+              "class_idx": 0,
+              "class_name": "no"
+            }
+          },
+          "right": {
+            "node_id": 175,
+            "samples": 26600,
+            "value": [
+              0.9462406015037594,
+              0.053759398496240604
+            ],
+            "is_leaf": false,
+            "feature_idx": 43,
+            "feature_name": "contact_telephone",
+            "threshold": 0.5,
+            "left": {
+              "node_id": 176,
+              "samples": 15341,
+              "value": [
+                0.9335115051170068,
+                0.06648849488299328
+              ],
+              "is_leaf": false,
+              "feature_idx": 7,
+              "feature_name": "euribor3m",
+              "threshold": 1.2860000133514404,
+              "left": {
+                "node_id": 177,
+                "samples": 1878,
+                "value": [
+                  0.8924387646432375,
+                  0.10756123535676251
+                ],
+                "is_leaf": false,
+                "feature_idx": 1,
+                "feature_name": "campaign",
+                "threshold": 4.5,
+                "left": {
+                  "node_id": 178,
+                  "samples": 1595,
+                  "value": [
+                    0.8808777429467085,
+                    0.11912225705329153
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 56,
+                  "feature_name": "day_of_week_thu",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 179,
+                    "samples": 1218,
+                    "value": [
+                      0.8669950738916257,
+                      0.1330049261083744
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 180,
+                    "samples": 377,
+                    "value": [
+                      0.9257294429708223,
+                      0.07427055702917772
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 181,
+                  "samples": 283,
+                  "value": [
+                    0.9575971731448764,
+                    0.04240282685512368
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 5.5,
+                  "left": {
+                    "node_id": 182,
+                    "samples": 95,
+                    "value": [
+                      0.9263157894736842,
+                      0.07368421052631578
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 183,
+                    "samples": 188,
+                    "value": [
+                      0.973404255319149,
+                      0.026595744680851064
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 184,
+                "samples": 13463,
+                "value": [
+                  0.9392408824184802,
+                  0.06075911758151972
+                ],
+                "is_leaf": false,
+                "feature_idx": 6,
+                "feature_name": "cons.conf.idx",
+                "threshold": -42.35000038146973,
+                "left": {
+                  "node_id": 185,
+                  "samples": 6863,
+                  "value": [
+                    0.9319539559959201,
+                    0.06804604400407985
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 59,
+                  "feature_name": "poutcome_failure",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 186,
+                    "samples": 6090,
+                    "value": [
+                      0.9285714285714286,
+                      0.07142857142857142
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 187,
+                    "samples": 773,
+                    "value": [
+                      0.9586028460543338,
+                      0.04139715394566624
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 188,
+                  "samples": 6600,
+                  "value": [
+                    0.9468181818181818,
+                    0.053181818181818184
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 7,
+                  "feature_name": "euribor3m",
+                  "threshold": 4.964500188827515,
+                  "left": {
+                    "node_id": 189,
+                    "samples": 4602,
+                    "value": [
+                      0.9528465884398087,
+                      0.04715341156019122
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 190,
+                    "samples": 1998,
+                    "value": [
+                      0.9329329329329329,
+                      0.06706706706706707
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              }
+            },
+            "right": {
+              "node_id": 191,
+              "samples": 11259,
+              "value": [
+                0.9635846878053113,
+                0.036415312194688694
+              ],
+              "is_leaf": false,
+              "feature_idx": 50,
+              "feature_name": "month_may",
+              "threshold": 0.5,
+              "left": {
+                "node_id": 192,
+                "samples": 4720,
+                "value": [
+                  0.9550847457627119,
+                  0.044915254237288135
+                ],
+                "is_leaf": false,
+                "feature_idx": 5,
+                "feature_name": "cons.price.idx",
+                "threshold": 93.68099975585938,
+                "left": {
+                  "node_id": 193,
+                  "samples": 406,
+                  "value": [
+                    0.916256157635468,
+                    0.08374384236453201
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 7,
+                  "feature_name": "euribor3m",
+                  "threshold": 4.207000017166138,
+                  "left": {
+                    "node_id": 194,
+                    "samples": 247,
+                    "value": [
+                      0.9757085020242915,
+                      0.024291497975708502
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 195,
+                    "samples": 159,
+                    "value": [
+                      0.8238993710691824,
+                      0.1761006289308176
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 196,
+                  "samples": 4314,
+                  "value": [
+                    0.9587389893370422,
+                    0.041261010662957814
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 48,
+                  "feature_name": "month_jun",
+                  "threshold": 0.5,
+                  "left": {
+                    "node_id": 197,
+                    "samples": 812,
+                    "value": [
+                      0.9753694581280788,
+                      0.024630541871921183
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 198,
+                    "samples": 3502,
+                    "value": [
+                      0.9548829240434038,
+                      0.04511707595659623
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              },
+              "right": {
+                "node_id": 199,
+                "samples": 6539,
+                "value": [
+                  0.9697201406942958,
+                  0.030279859305704235
+                ],
+                "is_leaf": false,
+                "feature_idx": 7,
+                "feature_name": "euribor3m",
+                "threshold": 4.857499837875366,
+                "left": {
+                  "node_id": 200,
+                  "samples": 4273,
+                  "value": [
+                    0.9742569623215539,
+                    0.025743037678446056
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 0,
+                  "feature_name": "age",
+                  "threshold": 57.5,
+                  "left": {
+                    "node_id": 201,
+                    "samples": 4146,
+                    "value": [
+                      0.9756391702846117,
+                      0.024360829715388325
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 202,
+                    "samples": 127,
+                    "value": [
+                      0.9291338582677166,
+                      0.07086614173228346
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                },
+                "right": {
+                  "node_id": 203,
+                  "samples": 2266,
+                  "value": [
+                    0.9611650485436893,
+                    0.038834951456310676
+                  ],
+                  "is_leaf": false,
+                  "feature_idx": 1,
+                  "feature_name": "campaign",
+                  "threshold": 3.5,
+                  "left": {
+                    "node_id": 204,
+                    "samples": 1769,
+                    "value": [
+                      0.9564725833804409,
+                      0.04352741661955907
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  },
+                  "right": {
+                    "node_id": 205,
+                    "samples": 497,
+                    "value": [
+                      0.9778672032193159,
+                      0.022132796780684104
+                    ],
+                    "is_leaf": true,
+                    "class_idx": 0,
+                    "class_name": "no"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "node_id": 206,
+          "samples": 55,
+          "value": [
+            0.38181818181818183,
+            0.6181818181818182
+          ],
+          "is_leaf": false,
+          "feature_idx": 7,
+          "feature_name": "euribor3m",
+          "threshold": 4.95199990272522,
+          "left": {
+            "node_id": 207,
+            "samples": 31,
+            "value": [
+              0.25806451612903225,
+              0.7419354838709677
+            ],
+            "is_leaf": true,
+            "class_idx": 1,
+            "class_name": "yes"
+          },
+          "right": {
+            "node_id": 208,
+            "samples": 24,
+            "value": [
+              0.5416666666666666,
+              0.4583333333333333
+            ],
+            "is_leaf": true,
+            "class_idx": 0,
+            "class_name": "no"
+          }
+        }
+      }
+    }
+  }
+}

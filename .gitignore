@@ -1,0 +1,15 @@
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.virtualenv/
+venv/
+ENV/
+env/
+.env
+
+# Local server/IDE configurations
+.vscode/
+.idea/
+.gemini/

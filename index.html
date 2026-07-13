@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Prix Bank Marketing Predictor & Decision Tree Chronograph</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Wooden Dashboard Header Panel -->
+        <header class="dashboard-header">
+            <div class="brand-area">
+                <span class="logo-icon">🏎️</span>
+                <div>
+                    <h1>GRAND PRIX ANALYTICAL LEDGER</h1>
+                    <p class="subtitle">Decision Tree Classification Engine • Bank Telemarketing Campaign</p>
+                </div>
+            </div>
+            <div class="serial-badge">
+                <span class="badge-lbl">CHASSIS NO.</span>
+                <span class="badge-val">UCI-BANK-41188</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="dashboard-grid">
+            
+            <!-- Left Console: Inputs -->
+            <section class="panel console-panel">
+                <div class="panel-header">
+                    <h2>📋 Driver Profile Instrumentation</h2>
+                    <p>Configure the customer's demographic and behavioral parameters.</p>
+                </div>
+                
+                <form id="predictor-form" class="instrument-form">
+                    <div class="section-title">Driver Demographics</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="input-age">Age (Years)</label>
+                            <input type="number" id="input-age" name="age" min="17" max="98" value="35" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-job">Occupation</label>
+                            <select id="select-job" name="job" required></select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="select-marital">Marital Status</label>
+                            <select id="select-marital" name="marital" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-education">Education Tier</label>
+                            <select id="select-education" name="education" required></select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="select-default">Credit Default?</label>
+                            <select id="select-default" name="default" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-housing">Housing Loan?</label>
+                            <select id="select-housing" name="housing" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-loan">Personal Loan?</label>
+                            <select id="select-loan" name="loan" required></select>
+                        </div>
+                    </div>
+
+                    <div class="section-title">Ignition & Campaign Settings</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="select-contact">Transmission (Contact)</label>
+                            <select id="select-contact" name="contact" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-month">Month</label>
+                            <select id="select-month" name="month" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-day_of_week">Day of Week</label>
+                            <select id="select-day_of_week" name="day_of_week" required></select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="input-campaign">Campaign Laps <span class="info-tip" title="Contacts performed during this campaign">ⓘ</span></label>
+                            <input type="number" id="input-campaign" name="campaign" min="1" max="56" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-pdays">Days Since Contact <span class="info-tip" title="Days since client was last contacted (999 = never)">ⓘ</span></label>
+                            <input type="number" id="input-pdays" name="pdays" min="0" max="999" value="999" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-previous">Previous Trips <span class="info-tip" title="Contacts performed before this campaign">ⓘ</span></label>
+                            <input type="number" id="input-previous" name="previous" min="0" max="7" value="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-poutcome">Prior Outcome</label>
+                            <select id="select-poutcome" name="poutcome" required></select>
+                        </div>
+                    </div>
+
+                    <div class="accordion-header" id="economic-accordion-btn">
+                        <span>⚙️ Social & Economic Manifold (Carburetor Settings)</span>
+                        <span class="chevron">▼</span>
+                    </div>
+                    <div class="accordion-content" id="economic-accordion-content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="input-emp-var-rate">Employment Var. Rate</label>
+                                <input type="number" step="0.1" id="input-emp-var-rate" name="emp.var.rate" value="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-cons-price-idx">Cons. Price Index</label>
+                                <input type="number" step="0.001" id="input-cons-price-idx" name="cons.price.idx" value="93.575">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="input-cons-conf-idx">Cons. Confidence Index</label>
+                                <input type="number" step="0.1" id="input-cons-conf-idx" name="cons.conf.idx" value="-40.5">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-euribor3m">Euribor 3-Month Rate</label>
+                                <input type="number" step="0.001" id="input-euribor3m" name="euribor3m" value="3.621">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-nr-employed">No. of Employees</label>
+                                <input type="number" step="0.1" id="input-nr-employed" name="nr.employed" value="5167.0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="predict-btn">Engage Prediction Engine</button>
+                </form>
+
+                <!-- Prediction Results Dial card -->
+                <div class="prediction-results-card hidden" id="results-card">
+                    <div class="results-layout">
+                        <!-- Speedometer probability gauge -->
+                        <div class="speedometer-container">
+                            <svg class="speedometer" viewBox="0 0 100 50">
+                                <path class="speedometer-scale" d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke-width="6"></path>
+                                <line class="speedometer-needle" id="speedometer-needle" x1="50" y1="50" x2="50" y2="15"></line>
+                                <circle cx="50" cy="50" r="5" class="speedometer-hub"></circle>
+                            </svg>
+                            <div class="speedometer-label">
+                                <span class="speedometer-val" id="prediction-percentage">0%</span>
+                                <span class="speedometer-unit">Probability</span>
+                            </div>
+                        </div>
+                        <div class="results-text">
+                            <h3>Outcome: <span id="prediction-outcome">No Subscription</span></h3>
+                            <p id="prediction-explanation">The client's markers match profiles that historically decline subscriptions.</p>
+                        </div>
+                    </div>
+                    <div class="path-tracker">
+                        <div class="path-title">Engine Logic (Decision Path):</div>
+                        <div class="path-steps" id="path-steps-container">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Performance & Visualizer -->
+            <div class="right-layout-group">
+                
+                <!-- Model Performance Metrics -->
+                <section class="panel metrics-panel">
+                    <div class="panel-header">
+                        <h2>📊 Model Dynamometer (Performance Metrics)</h2>
+                        <p>Decision Tree tuned using cross-validation. Duration is excluded to ensure realistic predictions.</p>
+                    </div>
+                    
+                    <div class="metrics-cards-grid">
+                        <div class="metric-card">
+                            <span class="metric-title">Accuracy</span>
+                            <span class="metric-value" id="metric-accuracy">0.0%</span>
+                            <span class="metric-description">Overall correctness</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-title">F1-Score</span>
+                            <span class="metric-value" id="metric-f1">0.00</span>
+                            <span class="metric-description">Balanced efficiency</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-title">Precision</span>
+                            <span class="metric-value" id="metric-precision">0.0%</span>
+                            <span class="metric-description">Reliability of Yes</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-title">Recall</span>
+                            <span class="metric-value" id="metric-recall">0.0%</span>
+                            <span class="metric-description">Capture rate of Yes</span>
+                        </div>
+                    </div>
+
+                    <div class="charts-row">
+                        <!-- Confusion Matrix -->
+                        <div class="chart-container">
+                            <h3>Error Matrix</h3>
+                            <div class="conf-matrix-grid">
+                                <div></div>
+                                <div class="axis-label header-label">Pred: NO</div>
+                                <div class="axis-label header-label">Pred: YES</div>
+                                
+                                <div class="axis-label side-label">True: NO</div>
+                                <div class="matrix-cell tn" id="cell-tn">0</div>
+                                <div class="matrix-cell fp" id="cell-fp">0</div>
+                                
+                                <div class="axis-label side-label">True: YES</div>
+                                <div class="matrix-cell fn" id="cell-fn">0</div>
+                                <div class="matrix-cell tp" id="cell-tp">0</div>
+                            </div>
+                        </div>
+
+                        <!-- Feature Importance -->
+                        <div class="chart-container flex-grow">
+                            <h3>Feature Contribution Torque</h3>
+                            <div class="feature-bar-list" id="feature-importance-list">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interactive Decision Tree Visualization -->
+                <section class="panel tree-panel">
+                    <div class="panel-header">
+                        <div class="tree-header-controls">
+                            <div>
+                                <h2>🌳 Decision Tree Wiring Harness</h2>
+                                <p>Trace splits dynamically. Green nodes represent split points. Brass paths highlight active predictions.</p>
+                            </div>
+                            <div class="zoom-controls">
+                                <button class="btn btn-sm" id="zoom-in-btn" title="Zoom In">+</button>
+                                <button class="btn btn-sm" id="zoom-out-btn" title="Zoom Out">-</button>
+                                <button class="btn btn-sm" id="zoom-reset-btn" title="Reset Zoom">⟲</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree-viewport" id="tree-viewport-container">
+                        <svg id="tree-svg"></svg>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Designed with classic British Racing Green & Walnut trim. Built for Prodigy InfoTech Task 03.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,751 @@
+/* Vintage Dashboard Design System - Bright Cream, Ash Wood, Brass & Leather */
+
+:root {
+    --bg-dark: #f6f3eb; /* Bright vintage cream / ivory */
+    --wood-dark: #d5c8b2; /* Light Ash Wood / Tan Leather base */
+    --wood-light: #e5dac6;
+    
+    --panel-bg: linear-gradient(145deg, var(--wood-light) 0%, var(--wood-dark) 100%);
+    --panel-border: 1.5px solid #a87e43; /* Brass trim */
+    
+    --text-main: #2b2118; /* Deep espresso brown for readable contrast */
+    --text-muted: #5e5449; /* Medium charcoal brown */
+    
+    /* Vintage Accents */
+    --accent-brass: #966f38; /* Burnished Brass */
+    --accent-brass-glow: rgba(150, 111, 56, 0.15);
+    --accent-chrome: #5a626a; /* Dark Chrome trim */
+    --accent-leather: #b35e2b; /* Racing tan/orange leather */
+    
+    --status-no: #ba473c; /* Vintage racing red */
+    --status-yes: #3c7a52; /* Classic British Racing Green indicator */
+    
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --font-mono: 'Courier Prime', monospace;
+    
+    --transition-needle: transform 1.2s cubic-bezier(0.25, 1, 0.2, 1);
+    --transition-smooth: all 0.25s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    background-image: 
+        radial-gradient(circle at 50% 10%, rgba(150, 111, 56, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 100% 100%, rgba(213, 200, 178, 0.3) 0%, transparent 100%);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+/* Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 24px;
+    max-width: 1550px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Header Panel - Bright Fascia */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    background: var(--panel-bg);
+    border: 2px solid var(--accent-brass);
+    border-radius: 6px;
+    box-shadow: 
+        inset 0 0 10px rgba(255, 255, 255, 0.6),
+        0 6px 16px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.brand-area {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-icon {
+    font-size: 32px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+}
+
+.dashboard-header h1 {
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--text-main);
+}
+
+.dashboard-header .subtitle {
+    color: var(--text-muted);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.serial-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #fbf9f5;
+    border: 1px solid var(--accent-brass);
+    padding: 6px 14px;
+    border-radius: 3px;
+    font-family: var(--font-mono);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.badge-lbl {
+    color: var(--accent-brass);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.badge-val {
+    color: var(--text-main);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+/* Instrument Panels */
+.panel {
+    background: var(--panel-bg);
+    border: 2px solid var(--accent-brass);
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 
+        inset 0 0 10px rgba(255, 255, 255, 0.5),
+        0 8px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel-header h2 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-main);
+    border-bottom: 1px solid rgba(150, 111, 56, 0.3);
+    padding-bottom: 6px;
+}
+
+.panel-header p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.right-layout-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Styles */
+.instrument-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--accent-brass);
+    letter-spacing: 1px;
+    border-bottom: 1px dashed rgba(150, 111, 56, 0.3);
+    padding-bottom: 3px;
+    margin-top: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.form-group input, 
+.form-group select {
+    background: #ffffff;
+    border: 1.5px solid #c2b6a3;
+    border-radius: 4px;
+    color: var(--text-main);
+    padding: 8px 12px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    outline: none;
+    transition: var(--transition-smooth);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: var(--accent-brass);
+    background-color: #fffffb;
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.05),
+        0 0 6px var(--accent-brass-glow);
+}
+
+/* Accordion */
+.accordion-header {
+    background: rgba(150, 111, 56, 0.05);
+    border: 1.5px solid rgba(150, 111, 56, 0.25);
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+.accordion-header:hover {
+    background: rgba(150, 111, 56, 0.1);
+    color: var(--text-main);
+}
+
+.accordion-header .chevron {
+    transition: var(--transition-smooth);
+}
+
+.accordion-header.active .chevron {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 2px;
+}
+
+.accordion-content.open {
+    display: flex;
+}
+
+/* Buttons */
+.btn {
+    border: 1px solid #966f38;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: var(--transition-smooth);
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background: linear-gradient(180deg, var(--accent-leather) 0%, #9e4f1d 100%);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(179, 94, 43, 0.15);
+    border-color: #924d22;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 
+        0 6px 16px rgba(179, 94, 43, 0.25),
+        inset 0 0 8px rgba(255, 255, 255, 0.15);
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    background: #fbf9f5;
+    color: var(--text-muted);
+    border-color: #c2b6a3;
+}
+
+.btn-sm:hover {
+    background: #eae3d2;
+    color: var(--text-main);
+}
+
+/* Results Display */
+.prediction-results-card {
+    background: #ffffff;
+    border: 1.5px solid rgba(150, 111, 56, 0.3);
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 
+        inset 0 1px 3px rgba(0, 0, 0, 0.05),
+        0 4px 12px rgba(0, 0, 0, 0.04);
+    animation: slideUp 0.3s ease-out;
+}
+
+.prediction-results-card.hidden {
+    display: none;
+}
+
+.results-layout {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 16px;
+}
+
+/* Speedometer Dial */
+.speedometer-container {
+    position: relative;
+    width: 130px;
+    height: 70px;
+}
+
+.speedometer {
+    width: 100%;
+    height: 100%;
+}
+
+.speedometer-scale {
+    stroke: rgba(150, 111, 56, 0.4);
+    stroke-dasharray: 2 3;
+}
+
+.speedometer-needle {
+    stroke: #b22222; /* Classic gauge red needle */
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    transform-origin: 50px 50px;
+    transform: rotate(-90deg);
+    transition: var(--transition-needle);
+}
+
+.speedometer-hub {
+    fill: #ffffff;
+    stroke: #5a626a;
+    stroke-width: 1.5;
+}
+
+.speedometer-label {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speedometer-val {
+    font-family: var(--font-mono);
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1;
+}
+
+.speedometer-unit {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.results-text h3 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.results-text p {
+    font-size: 15px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+#prediction-outcome.yes {
+    color: var(--status-yes);
+}
+
+#prediction-outcome.no {
+    color: var(--status-no);
+}
+
+/* Trace steps */
+.path-tracker {
+    border-top: 1px solid rgba(150, 111, 56, 0.25);
+    padding-top: 12px;
+}
+
+.path-title {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--accent-brass);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.path-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.path-step {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    padding: 6px 10px;
+    background: rgba(150, 111, 56, 0.03);
+    border-left: 2.5px solid var(--accent-brass);
+    border-radius: 0 3px 3px 0;
+    color: var(--text-muted);
+}
+
+.path-step.highlight {
+    color: var(--text-main);
+    background: rgba(150, 111, 56, 0.06);
+    border-left-color: var(--accent-brass);
+}
+
+/* Performance Metrics Cards */
+.metrics-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.metric-card {
+    background: #ffffff;
+    border: 1.5px solid rgba(150, 111, 56, 0.25);
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.metric-title {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--accent-brass);
+    font-weight: 600;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.metric-value {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--text-main);
+}
+
+.metric-description {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Charts and Matrix */
+.charts-row {
+    display: flex;
+    gap: 20px;
+}
+
+.chart-container {
+    background: #ffffff;
+    border: 1.5px solid rgba(150, 111, 56, 0.25);
+    border-radius: 4px;
+    padding: 16px;
+    flex: 1;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container.flex-grow {
+    flex: 1.5;
+}
+
+.chart-container h3 {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-brass);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Confusion Matrix */
+.conf-matrix-grid {
+    display: grid;
+    grid-template-columns: 80px 100px 100px;
+    grid-template-rows: 24px 60px 60px;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    font-family: var(--font-mono);
+}
+
+.axis-label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.header-label {
+    justify-content: center;
+}
+
+.side-label {
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.matrix-cell {
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-main);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.matrix-cell::after {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.matrix-cell.tn {
+    background: rgba(186, 71, 60, 0.06);
+    border: 1.5px solid rgba(186, 71, 60, 0.2);
+}
+
+.matrix-cell.tn::after { content: "True Neg (TN)"; }
+
+.matrix-cell.tp {
+    background: rgba(60, 122, 82, 0.06);
+    border: 1.5px solid rgba(60, 122, 82, 0.2);
+}
+
+.matrix-cell.tp::after { content: "True Pos (TP)"; }
+
+.matrix-cell.fp::after { content: "False Pos (FP)"; }
+.matrix-cell.fn::after { content: "False Neg (FN)"; }
+
+/* Feature bars */
+.feature-bar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-name {
+    width: 140px;
+    font-size: 14px;
+    color: var(--text-main);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.feature-bar-track {
+    flex-grow: 1;
+    height: 8px;
+    background: #eae3d2;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.feature-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #c0873d 0%, var(--accent-brass) 100%);
+    border-radius: 4px;
+    transition: width 1s ease-out;
+}
+
+.feature-val {
+    width: 45px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-main);
+    text-align: right;
+}
+
+/* Tree Explorer */
+.tree-panel {
+    min-height: 480px;
+    flex-grow: 1;
+}
+
+.tree-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zoom-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.tree-viewport {
+    flex-grow: 1;
+    background: #ffffff;
+    border: 1.5px solid rgba(150, 111, 56, 0.25);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    min-height: 380px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+#tree-svg {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+#tree-svg:active {
+    cursor: grabbing;
+}
+
+/* SVG Dials / Wiring diagram nodes */
+.node-circle {
+    fill: #ffffff;
+    stroke: var(--accent-brass);
+    stroke-width: 1.5px;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.node-circle.leaf {
+    stroke-width: 2px;
+}
+
+.node-circle.leaf-yes {
+    stroke: var(--status-yes);
+    fill: rgba(60, 122, 82, 0.1);
+}
+
+.node-circle.leaf-no {
+    stroke: var(--status-no);
+    fill: rgba(186, 71, 60, 0.1);
+}
+
+.node-circle:hover {
+    filter: brightness(0.9);
+}
+
+.node-link {
+    fill: none;
+    stroke: rgba(150, 111, 56, 0.2); /* Copper wires */
+    stroke-width: 1.5px;
+    transition: var(--transition-smooth);
+}
+
+/* Path highlights */
+.node-circle.active-path {
+    fill: var(--accent-leather);
+    stroke: #b22222;
+}
+
+.node-link.active-path {
+    stroke: #b22222; /* Red hot active line */
+    stroke-width: 3px;
+}
+
+.node-label {
+    fill: var(--text-main);
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.node-subtext {
+    fill: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 9px;
+    pointer-events: none;
+}
+
+.node-value-text {
+    fill: #000;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    padding: 16px;
+    color: var(--text-muted);
+    font-size: 13px;
+    border-top: 1px solid rgba(150, 111, 56, 0.25);
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
