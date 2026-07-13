@@ -73,6 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 5. Draw the initial Decision Tree
         drawDecisionTree(data.decision_tree);
+
+        // 6. Run initial prediction with default values
+        runPrediction();
     }
 
     function populateDropdowns(categories) {
@@ -144,18 +147,16 @@ document.addEventListener('DOMContentLoaded', () => {
             .replace('campaign', 'Campaign Contacts');
     }
 
-    // Handle Form Submit (Prediction)
-    predictorForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    function runPrediction() {
         if (!modelData) return;
 
         const formData = new FormData(predictorForm);
         const inputs = {};
         for (const [key, value] of formData.entries()) {
             if (key === 'age' || key === 'campaign' || key === 'pdays' || key === 'previous') {
-                inputs[key] = parseInt(value, 10);
+                inputs[key] = parseInt(value, 10) || 0;
             } else if (key === 'emp.var.rate' || key === 'cons.price.idx' || key === 'cons.conf.idx' || key === 'euribor3m' || key === 'nr.employed') {
-                inputs[key] = parseFloat(value);
+                inputs[key] = parseFloat(value) || 0.0;
             } else {
                 inputs[key] = value;
             }
@@ -166,7 +167,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Display Results Card
         displayPrediction(prediction);
+    }
+
+    // Handle Form Submit (Prediction)
+    predictorForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        runPrediction();
     });
+
+    // Auto-predict on any input change or select change
+    predictorForm.addEventListener('input', runPrediction);
+    predictorForm.addEventListener('change', runPrediction);
 
     function getFeatureValue(featureName, inputs) {
         // If it's a direct numerical feature
